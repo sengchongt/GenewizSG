@@ -33,3 +33,7 @@ Service categories and positioning were checked against public GENEWIZ/Azenta pa
 
 - https://www.genewiz.com/
 - https://www.azenta.com/genewiz-multiomics-synthesis
+- https://www.genewiz.com/en/Public/Services/Gene-Synthesis/Gene-Synthesis-Service
+- https://www.genewiz.com/en-gb/public/services/gene-synthesis/gene-fragments
+- https://www.genewiz.com/Public/Resources/FAQs/FAQs-Plasmid-Prep/
+- https://www.genewiz.com/public/services/oligo
