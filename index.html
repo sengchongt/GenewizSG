@@ -33,9 +33,7 @@
           </span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#solutions">Services</a>
-          <a href="#ngs-applications">NGS Applications</a>
-          <a href="#synthesis">Synthesis</a>
+          <a href="#solutions">Service lines</a>
           <a href="#contact">Contact</a>
         </nav>
         <a class="quote-button" href="#contact">
@@ -83,136 +81,228 @@
 
       <section id="solutions" class="solutions" aria-labelledby="solutions-title">
         <div class="section-heading">
-          <p class="section-kicker">Service Lanes</p>
+          <p class="section-kicker">Service Lines</p>
           <h2 id="solutions-title">GENEWIZ services I can help route.</h2>
         </div>
-        <div class="solution-grid">
-          <article>
-            <i data-lucide="network"></i>
-            <h3>Next Generation Sequencing</h3>
-            <p>Library prep, targeted assays, whole genome, transcriptome, and data-quality discussions.</p>
-          </article>
-          <article>
-            <i data-lucide="blocks"></i>
-            <h3>Gene Synthesis</h3>
-            <p>Fragments, cloned genes, codon optimization, synthetic libraries, and cloning support.</p>
-          </article>
-          <article>
-            <i data-lucide="test-tube-2"></i>
-            <h3>Oligo Synthesis</h3>
-            <p>Standard primers, modified oligos, purification choices, and ordering support.</p>
-          </article>
-          <article>
-            <i data-lucide="flask-conical"></i>
-            <h3>Plasmid DNA Preparation</h3>
-            <p>Prep scale selection, QC expectations, turnaround planning, and downstream fit.</p>
-          </article>
-          <article>
-            <i data-lucide="microscope"></i>
-            <h3>Antibody</h3>
-            <p>Antibody DNA synthesis, discovery support, and downstream gene-to-discovery project routing.</p>
-          </article>
-          <article>
-            <i data-lucide="shield-check"></i>
-            <h3>GLP & Clinical Services</h3>
-            <p>Regulated project intake, documentation needs, and technical handoff planning.</p>
-          </article>
-        </div>
 
-        <div id="ngs-applications" class="service-detail">
-          <div class="detail-copy">
-            <p class="section-kicker">NGS Applications</p>
-            <h3>Flexible sequencing support across common research questions.</h3>
-            <p>
-              GENEWIZ NGS workflows support RNA and DNA applications from expression
-              profiling to genome-wide analysis, targeted sequencing, and amplicon work.
-            </p>
-          </div>
-          <div class="application-grid">
-            <article><span>RNA-Seq</span><p>Eukaryotic transcriptome profiling for coding gene expression studies.</p></article>
-            <article><span>LncRNA-Seq</span><p>Long non-coding RNA discovery and expression analysis.</p></article>
-            <article><span>Prokaryotic RNA-Seq</span><p>Bacterial and microbial transcriptome analysis.</p></article>
-            <article><span>Small RNA-Seq</span><p>miRNA and other small RNA expression profiling.</p></article>
-            <article><span>WGS</span><p>Whole genome sequencing for variant discovery and genome-level analysis.</p></article>
-            <article><span>WGBS</span><p>Whole genome bisulfite sequencing for DNA methylation profiling.</p></article>
-            <article><span>Amplicon Seq</span><p>Targeted amplicon sequencing, including long-read options for contiguous targets.</p></article>
-            <article><span>And More</span><p>Custom sequencing, targeted panels, metagenomics, and project-specific consultation.</p></article>
-          </div>
-        </div>
+        <div class="service-lines">
+          <details class="service-line" open>
+            <summary>
+              <span class="summary-icon"><i data-lucide="network"></i></span>
+              <span>
+                <strong>Next Generation Sequencing</strong>
+                <small>RNA, DNA, single-cell, epigenomics, metagenomics, immunogenomics, and more.</small>
+              </span>
+              <i class="chevron" data-lucide="chevron-down"></i>
+            </summary>
+            <div class="service-body">
+              <div class="service-intro">
+                <h3>NGS applications</h3>
+                <p>
+                  Standard and custom options for extraction, library preparation,
+                  sequencing, and bioinformatics across Illumina, PacBio, Oxford Nanopore,
+                  10x Genomics, and related platforms.
+                </p>
+              </div>
+              <div class="category-grid">
+                <article>
+                  <h4>RNA Applications</h4>
+                  <div class="chip-list">
+                    <span>RNA-Seq (eukaryotes)</span>
+                    <span>LncRNA-Seq</span>
+                    <span>RNA-Seq (prokaryotes)</span>
+                    <span>Small RNA-Seq</span>
+                    <span>Single-Cell RNA-Seq</span>
+                    <span>Spatial Transcriptomics</span>
+                    <span>Iso-Seq</span>
+                    <span>High-Throughput Gene Expression</span>
+                  </div>
+                </article>
+                <article>
+                  <h4>DNA Applications</h4>
+                  <div class="chip-list">
+                    <span>Whole Genome Sequencing (WGS)</span>
+                    <span>Whole Exome Sequencing</span>
+                    <span>Targeted Sequencing</span>
+                    <span>Amplicon Sequencing</span>
+                    <span>Long-Read Amplicon Sequencing</span>
+                    <span>CRISPR Validation</span>
+                    <span>AAV Genome Sequencing</span>
+                    <span>Whole Plasmid Sequencing: Plasmid-EZ</span>
+                    <span>Long-Read PCR Product Sequencing: PCR-EZ</span>
+                  </div>
+                </article>
+                <article>
+                  <h4>Other NGS Applications</h4>
+                  <div class="chip-list">
+                    <span>Epigenomics</span>
+                    <span>ATAC-Seq</span>
+                    <span>ChIP-Seq</span>
+                    <span>WGBS</span>
+                    <span>Metagenomics Solutions</span>
+                    <span>Immunogenomics</span>
+                    <span>Antibody Discovery</span>
+                    <span>Proteomics</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </details>
 
-        <div id="synthesis" class="service-detail two-column-detail">
-          <div class="detail-copy">
-            <p class="section-kicker">Gene Synthesis</p>
-            <h3>Choose fragments or cloned synthetic genes.</h3>
-            <p>
-              GENEWIZ synthesis services support custom DNA needs from linear fragments
-              through cloned genes, with project updates and design support available.
-            </p>
-          </div>
-          <div class="product-stack">
-            <article>
-              <h4>FragmentGENE</h4>
-              <p>Double-stranded linear DNA fragments from 100-3,000 bp, delivered dried for resuspension, cloning, and screening.</p>
-              <ul>
-                <li>500 ng to 1,000 ng deliverable yield by length</li>
-                <li>Typical completion from 2-8 business days by size</li>
-                <li>Useful for rapid iteration, assembly, and screening</li>
-              </ul>
-            </article>
-            <article>
-              <h4>PriorityGENE</h4>
-              <p>Standard gene synthesis with cloning into a plasmid for custom synthetic sequences.</p>
-              <ul>
-                <li>Clonal genes in roughly 5-8 business days, depending on region and project</li>
-                <li>2-5 ug plasmid DNA deliverable</li>
-                <li>Includes sequence verification and project documentation</li>
-              </ul>
-            </article>
-          </div>
-        </div>
+          <details class="service-line">
+            <summary>
+              <span class="summary-icon"><i data-lucide="blocks"></i></span>
+              <span>
+                <strong>Gene Synthesis</strong>
+                <small>Fragments, cloned synthetic genes, codon optimization, and antibody DNA synthesis.</small>
+              </span>
+              <i class="chevron" data-lucide="chevron-down"></i>
+            </summary>
+            <div class="service-body">
+              <div class="category-grid two-up">
+                <article>
+                  <h4>FragmentGENE</h4>
+                  <p>Double-stranded linear DNA fragments from 100-3,000 bp, delivered dried for resuspension, cloning, and screening.</p>
+                  <ul>
+                    <li>500 ng to 1,000 ng deliverable yield by length</li>
+                    <li>Typical completion from 2-8 business days by size</li>
+                    <li>Useful for rapid iteration, assembly, and screening</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>PriorityGENE</h4>
+                  <p>Standard gene synthesis with cloning into a plasmid for custom synthetic sequences.</p>
+                  <ul>
+                    <li>Clonal genes in roughly 5-8 business days, depending on region and project</li>
+                    <li>2-5 ug plasmid DNA deliverable</li>
+                    <li>Includes sequence verification and project documentation</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>Additional synthesis options</h4>
+                  <div class="chip-list">
+                    <span>TurboGENE</span>
+                    <span>Antibody DNA Synthesis</span>
+                    <span>Synthetic DNA Libraries</span>
+                    <span>CRISPR gRNA Construct Synthesis</span>
+                    <span>AAV Plasmid Synthesis</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </details>
 
-        <div class="service-detail two-column-detail">
-          <div class="detail-copy">
-            <p class="section-kicker">Plasmid DNA Preparation</p>
-            <h3>Scale from routine prep to targeted yield.</h3>
-            <p>
-              GENEWIZ plasmid prep includes standard-scale services, targeted-yield
-              transfection-grade DNA, 96-well mini-preps, custom large-scale preps, and AAV plasmid prep options.
-            </p>
-          </div>
-          <div class="scale-list">
-            <span>Mini</span>
-            <span>Midi</span>
-            <span>Maxi</span>
-            <span>Mega</span>
-            <span>Giga</span>
-            <span>Targeted Yield: 250 ug to 5 g</span>
-          </div>
-        </div>
+          <details class="service-line">
+            <summary>
+              <span class="summary-icon"><i data-lucide="flask-conical"></i></span>
+              <span>
+                <strong>Plasmid DNA Preparation</strong>
+                <small>Standard scale, targeted yield, 96-well, custom large-scale, and AAV prep options.</small>
+              </span>
+              <i class="chevron" data-lucide="chevron-down"></i>
+            </summary>
+            <div class="service-body">
+              <div class="category-grid two-up">
+                <article>
+                  <h4>Standard Scale Prep</h4>
+                  <div class="chip-list">
+                    <span>Mini</span>
+                    <span>Midi</span>
+                    <span>Maxi</span>
+                    <span>Mega</span>
+                    <span>Giga</span>
+                  </div>
+                </article>
+                <article>
+                  <h4>Targeted Yield Prep</h4>
+                  <p>Premium amount-based service for high-copy, stable plasmids, with transfection-grade options and quantities from 250 ug to 5 g.</p>
+                </article>
+                <article>
+                  <h4>Additional prep formats</h4>
+                  <div class="chip-list">
+                    <span>96-well mini-preps</span>
+                    <span>Custom large-scale preps</span>
+                    <span>AAV plasmid preps</span>
+                    <span>Analysis options</span>
+                    <span>Aliquots or custom tubes</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </details>
 
-        <div class="service-detail two-column-detail">
-          <div class="detail-copy">
-            <p class="section-kicker">Oligo Synthesis</p>
-            <h3>Custom DNA, RNA, and modified oligos.</h3>
-            <p>
-              GENEWIZ oligo synthesis supports custom DNA oligos, RNA oligos,
-              modified oligos, purification options, and scale selection based on quantity needs.
-            </p>
-          </div>
-          <div class="product-stack compact">
-            <article>
-              <h4>Overnight DNA Oligos</h4>
-              <p>Standard, desalted DNA oligos up to 60 nucleotides at 25 or 50 nmol scale.</p>
-            </article>
-            <article>
-              <h4>Custom DNA & RNA Oligos</h4>
-              <p>Custom-length oligos from 5-150 bases at 25-1000 nmol scales, with purification and modification options.</p>
-            </article>
-            <article>
-              <h4>Modified Oligos</h4>
-              <p>Long, modified, and purified oligos with expanded scale options and many chemical modifications.</p>
-            </article>
-          </div>
+          <details class="service-line">
+            <summary>
+              <span class="summary-icon"><i data-lucide="test-tube-2"></i></span>
+              <span>
+                <strong>Oligo Synthesis</strong>
+                <small>DNA oligos, RNA oligos, modified oligos, purification options, and scale selection.</small>
+              </span>
+              <i class="chevron" data-lucide="chevron-down"></i>
+            </summary>
+            <div class="service-body">
+              <div class="category-grid three-up">
+                <article>
+                  <h4>Overnight DNA Oligos</h4>
+                  <p>Standard, desalted DNA oligos up to 60 nucleotides at 25 or 50 nmol scale.</p>
+                </article>
+                <article>
+                  <h4>Custom DNA & RNA Oligos</h4>
+                  <p>Custom-length oligos from 5-150 bases at 25-1000 nmol scales, with purification and modification options.</p>
+                </article>
+                <article>
+                  <h4>Modified Oligos</h4>
+                  <p>Long, modified, and purified oligos with expanded scale options and many chemical modifications.</p>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="service-line">
+            <summary>
+              <span class="summary-icon"><i data-lucide="microscope"></i></span>
+              <span>
+                <strong>Antibody</strong>
+                <small>Antibody DNA synthesis, discovery support, and gene-to-discovery project routing.</small>
+              </span>
+              <i class="chevron" data-lucide="chevron-down"></i>
+            </summary>
+            <div class="service-body">
+              <div class="category-grid two-up">
+                <article>
+                  <h4>Antibody DNA Synthesis</h4>
+                  <p>Synthesis and cloning of heavy and light chain sequences for antibody research workflows.</p>
+                </article>
+                <article>
+                  <h4>Antibody Discovery</h4>
+                  <p>Project routing for discovery and immunology workflows connected to synthesis and sequencing needs.</p>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="service-line">
+            <summary>
+              <span class="summary-icon"><i data-lucide="shield-check"></i></span>
+              <span>
+                <strong>GLP & Clinical Services</strong>
+                <small>Regulated project intake, documentation needs, and technical handoff planning.</small>
+              </span>
+              <i class="chevron" data-lucide="chevron-down"></i>
+            </summary>
+            <div class="service-body">
+              <div class="category-grid two-up">
+                <article>
+                  <h4>GLP-Compliant Services</h4>
+                  <p>Regulated service routing for programs needing documented workflows and quality-system alignment.</p>
+                </article>
+                <article>
+                  <h4>Clinical Services</h4>
+                  <p>Support for identifying the right clinical or preclinical service contact and intake path.</p>
+                </article>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
