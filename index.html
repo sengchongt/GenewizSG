@@ -8,10 +8,7 @@
       content="Account management support for GENEWIZ Multiomics and Synthesis Solutions from Azenta Life Sciences."
     />
     <title>GENEWIZ Account Manager | Genomics Project Support</title>
-    <link
-      rel="icon"
-      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23007c89"/><text x="32" y="41" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="white">G</text></svg>'
-    />
+    <link rel="icon" href="assets/genewiz-favicon.png" />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@latest" defer></script>
@@ -26,9 +23,8 @@
       </div>
       <div class="main-nav">
         <a class="brand" href="#top" aria-label="GENEWIZ account manager home">
-          <span class="brand-word">GENEWIZ</span>
+          <img class="brand-logo" src="assets/genewiz-logo.svg" alt="GENEWIZ from Azenta Life Sciences" />
           <span>
-            <strong>from Azenta Life Sciences</strong>
             <small>Seng Chong Teo | Account Manager</small>
           </span>
         </a>
@@ -55,7 +51,7 @@
             plasmid preparation, antibody workflows, and regulated-service workflows.
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="mailto:sengchong.teo@azenta.com">
+            <a class="primary-action" href="#contact">
               <i data-lucide="mail"></i>
               Email Seng Chong
             </a>
@@ -104,47 +100,84 @@
                   10x Genomics, and related platforms.
                 </p>
               </div>
-              <div class="category-grid">
-                <article>
-                  <h4>RNA Applications</h4>
-                  <div class="chip-list">
-                    <span>RNA-Seq (eukaryotes)</span>
-                    <span>LncRNA-Seq</span>
-                    <span>RNA-Seq (prokaryotes)</span>
-                    <span>Small RNA-Seq</span>
-                    <span>Single-Cell RNA-Seq</span>
-                    <span>Spatial Transcriptomics</span>
-                    <span>Iso-Seq</span>
-                    <span>High-Throughput Gene Expression</span>
+              <div class="ngs-options">
+                <details class="ngs-option">
+                  <summary>
+                    <span>
+                      <strong>DNA</strong>
+                      <small>Genomes, exomes, targeted panels, amplicons, plasmids, AAV, CRISPR checks, and DNA-based workflows.</small>
+                    </span>
+                    <i class="chevron" data-lucide="chevron-down"></i>
+                  </summary>
+                  <div class="ngs-breakdown">
+                    <div>
+                      <h5>Genome and targeted sequencing</h5>
+                      <div class="chip-list">
+                        <span>Whole Genome Sequencing (WGS)</span>
+                        <span>Whole Exome Sequencing</span>
+                        <span>Targeted Sequencing</span>
+                        <span>Amplicon Sequencing</span>
+                        <span>Long-Read Amplicon Sequencing</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h5>Constructs and validation</h5>
+                      <div class="chip-list">
+                        <span>CRISPR Validation</span>
+                        <span>AAV Genome Sequencing</span>
+                        <span>Whole Plasmid Sequencing: Plasmid-EZ</span>
+                        <span>Long-Read PCR Product Sequencing: PCR-EZ</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h5>DNA-linked specialty workflows</h5>
+                      <div class="chip-list">
+                        <span>Epigenomics</span>
+                        <span>ATAC-Seq</span>
+                        <span>ChIP-Seq</span>
+                        <span>WGBS</span>
+                        <span>Metagenomics Solutions</span>
+                      </div>
+                    </div>
                   </div>
-                </article>
-                <article>
-                  <h4>DNA Applications</h4>
-                  <div class="chip-list">
-                    <span>Whole Genome Sequencing (WGS)</span>
-                    <span>Whole Exome Sequencing</span>
-                    <span>Targeted Sequencing</span>
-                    <span>Amplicon Sequencing</span>
-                    <span>Long-Read Amplicon Sequencing</span>
-                    <span>CRISPR Validation</span>
-                    <span>AAV Genome Sequencing</span>
-                    <span>Whole Plasmid Sequencing: Plasmid-EZ</span>
-                    <span>Long-Read PCR Product Sequencing: PCR-EZ</span>
+                </details>
+                <details class="ngs-option">
+                  <summary>
+                    <span>
+                      <strong>RNA</strong>
+                      <small>Transcriptomics, expression profiling, single-cell, spatial, isoform, small RNA, and immune repertoire projects.</small>
+                    </span>
+                    <i class="chevron" data-lucide="chevron-down"></i>
+                  </summary>
+                  <div class="ngs-breakdown">
+                    <div>
+                      <h5>Bulk and expression profiling</h5>
+                      <div class="chip-list">
+                        <span>RNA-Seq (eukaryotes)</span>
+                        <span>LncRNA-Seq</span>
+                        <span>RNA-Seq (prokaryotes)</span>
+                        <span>High-Throughput Gene Expression</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h5>Specialized RNA workflows</h5>
+                      <div class="chip-list">
+                        <span>Small RNA-Seq</span>
+                        <span>Single-Cell RNA-Seq</span>
+                        <span>Spatial Transcriptomics</span>
+                        <span>Iso-Seq</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h5>Discovery add-ons</h5>
+                      <div class="chip-list">
+                        <span>Immunogenomics</span>
+                        <span>Antibody Discovery</span>
+                        <span>Proteomics</span>
+                      </div>
+                    </div>
                   </div>
-                </article>
-                <article>
-                  <h4>Other NGS Applications</h4>
-                  <div class="chip-list">
-                    <span>Epigenomics</span>
-                    <span>ATAC-Seq</span>
-                    <span>ChIP-Seq</span>
-                    <span>WGBS</span>
-                    <span>Metagenomics Solutions</span>
-                    <span>Immunogenomics</span>
-                    <span>Antibody Discovery</span>
-                    <span>Proteomics</span>
-                  </div>
-                </article>
+                </details>
               </div>
             </div>
           </details>
@@ -165,7 +198,7 @@
                   <p>Double-stranded linear DNA fragments from 100-3,000 bp, delivered dried for resuspension, cloning, and screening.</p>
                   <ul>
                     <li>500 ng to 1,000 ng deliverable yield by length</li>
-                    <li>Typical completion from 2-8 business days by size</li>
+                    <li>Typical completion from 5-8 business days by size</li>
                     <li>Useful for rapid iteration, assembly, and screening</li>
                   </ul>
                 </article>
@@ -243,7 +276,7 @@
             <div class="service-body">
               <div class="category-grid three-up">
                 <article>
-                  <h4>Overnight DNA Oligos</h4>
+                  <h4>DNA Oligos</h4>
                   <p>Standard, desalted DNA oligos up to 60 nucleotides at 25 or 50 nmol scale.</p>
                 </article>
                 <article>

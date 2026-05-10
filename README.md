@@ -21,11 +21,23 @@ Then visit `http://localhost:4173`.
 
 ## Publish With GitHub Pages
 
-1. Create a GitHub repository.
-2. Push these files to the repository.
-3. In GitHub, open **Settings > Pages**.
-4. Select the main branch and root folder as the Pages source.
+This site is ready to publish from:
+
+https://github.com/scgenewiz/Singapore
+
+1. Make the repository public if you are using GitHub Free.
+2. In GitHub, open **Settings > Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select the `main` branch and `/ (root)` folder.
 5. Save and wait for the Pages URL to become available.
+
+The expected public URL is:
+
+https://scgenewiz.github.io/Singapore/
+
+If the repository must stay private, use a free static host such as Cloudflare
+Pages or Netlify instead. GitHub Pages from private repositories requires a paid
+GitHub plan.
 
 ## Source References
 
