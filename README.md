@@ -14,8 +14,8 @@ Then visit `http://localhost:4173`.
 
 ## Customize Before Publishing
 
-- Replace placeholder contact details in `index.html`.
-- Update the account manager name, territory, and consultation link.
+- Contact details are set to `sengchong.teo@azenta.com` and `+65-81128827`.
+- Update territory notes or consultation links if you want to add them later.
 - Confirm corporate brand, logo, trademark, and compliance requirements before sharing publicly.
 - Replace the stock lab image if you have an approved GENEWIZ or Azenta asset.
 

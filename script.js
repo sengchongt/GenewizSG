@@ -17,13 +17,13 @@ const templates = {
       "Any difficult regions, repeats, GC concerns, or IP constraints",
     ],
   },
-  sanger: {
-    title: "Sanger submission notes",
+  plasmid: {
+    title: "Plasmid prep notes",
     items: [
-      "Sample format: tubes, plates, plasmid, PCR product, or colony",
-      "Primer plan and whether universal or custom primers are needed",
-      "Read direction, expected product size, and number of reactions",
-      "Turnaround expectations and any institutional ordering requirements",
+      "Vector name, copy number, antibiotic marker, and insert details",
+      "Requested prep scale, concentration target, and QC expectations",
+      "Downstream application and delivery format requirements",
+      "Timeline, shipping location, and any institutional ordering requirements",
     ],
   },
 };
@@ -70,12 +70,12 @@ document.querySelector(".contact-form").addEventListener("submit", (event) => {
     message,
   ].join("\n");
 
-  const mailto = new URL("mailto:your.email@azenta.com");
+  const mailto = new URL("mailto:sengchong.teo@azenta.com");
   mailto.searchParams.set("subject", `GENEWIZ project inquiry: ${project}`);
   mailto.searchParams.set("body", body);
   window.location.href = mailto.toString();
   form.querySelector(".form-note").textContent =
-    "Email draft prepared. Update the contact address before publishing.";
+    "Email draft prepared for sengchong.teo@azenta.com.";
 });
 
 window.addEventListener("DOMContentLoaded", () => {

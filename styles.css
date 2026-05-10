@@ -6,6 +6,7 @@
   --panel: #ffffff;
   --soft: #f4f7f8;
   --teal: #007c89;
+  --blue: #005eb8;
   --green: #2b8c67;
   --coral: #d55f45;
   --navy: #17314a;
@@ -38,15 +39,30 @@ a {
   position: fixed;
   inset: 0 0 auto;
   z-index: 20;
+  background: #fff;
+  border-bottom: 1px solid rgba(221, 229, 234, 0.95);
+  box-shadow: 0 8px 26px rgba(23, 32, 41, 0.08);
+}
+
+.utility-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+  min-height: 34px;
+  padding: 8px clamp(18px, 4vw, 56px);
+  background: #eef4f7;
+  color: #43505d;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  min-height: 74px;
+  min-height: 76px;
   padding: 14px clamp(18px, 4vw, 56px);
-  background: rgba(255, 255, 255, 0.88);
-  border-bottom: 1px solid rgba(221, 229, 234, 0.8);
-  backdrop-filter: blur(16px);
 }
 
 .brand {
@@ -56,15 +72,12 @@ a {
   min-width: max-content;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--teal);
-  color: #fff;
-  font-weight: 800;
+.brand-word {
+  color: var(--blue);
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .brand strong,
@@ -91,17 +104,21 @@ nav a {
   padding: 8px 0;
 }
 
-.icon-button {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
+.quote-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 0 16px;
   border-radius: 8px;
-  background: var(--ink);
+  background: var(--blue);
   color: #fff;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
-.icon-button svg,
+.quote-button svg,
 .primary-action svg,
 .secondary-action svg,
 .solution-grid svg,
@@ -115,10 +132,10 @@ nav a {
 
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 760px;
   display: grid;
   align-items: end;
-  padding: 128px clamp(18px, 4vw, 56px) 32px;
+  padding: 164px clamp(18px, 4vw, 56px) 32px;
   overflow: hidden;
   color: #fff;
 }
@@ -138,7 +155,7 @@ nav a {
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(11, 25, 38, 0.86), rgba(11, 25, 38, 0.56) 48%, rgba(11, 25, 38, 0.08)),
+    linear-gradient(90deg, rgba(7, 35, 62, 0.9), rgba(0, 94, 184, 0.5) 48%, rgba(0, 124, 137, 0.12)),
     linear-gradient(0deg, rgba(11, 25, 38, 0.42), transparent 46%);
 }
 
@@ -171,10 +188,10 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 860px;
   margin-bottom: 20px;
-  font-size: clamp(2.7rem, 8vw, 6.7rem);
-  line-height: 0.94;
+  font-size: clamp(2.45rem, 6.3vw, 5.2rem);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -224,8 +241,8 @@ p {
 }
 
 .primary-action {
-  background: #fff;
-  color: var(--ink);
+  background: var(--blue);
+  color: #fff;
 }
 
 .secondary-action {
@@ -258,7 +275,7 @@ p {
 .hero-panel span {
   display: block;
   margin-bottom: 6px;
-  color: var(--teal);
+  color: var(--blue);
   font-size: 2rem;
   font-weight: 900;
 }
@@ -291,7 +308,7 @@ section:not(.hero) {
 }
 
 .solutions {
-  background: #eef4f5;
+  background: #eef4f7;
 }
 
 .solution-grid {
@@ -306,11 +323,12 @@ section:not(.hero) {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  border-top: 4px solid var(--blue);
 }
 
 .solution-grid svg {
   margin-bottom: 42px;
-  color: var(--teal);
+  color: var(--blue);
 }
 
 .workflow {
@@ -372,8 +390,8 @@ section:not(.hero) {
 }
 
 .resource-item.is-active {
-  border-color: var(--teal);
-  color: var(--teal);
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .template-output {
@@ -420,7 +438,7 @@ section:not(.hero) {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--teal);
+  color: var(--blue);
   font-weight: 800;
 }
 
@@ -465,7 +483,7 @@ textarea {
 
 .contact-form button {
   border: 0;
-  background: var(--teal);
+  background: var(--blue);
   color: #fff;
   cursor: pointer;
 }
@@ -496,13 +514,21 @@ footer a {
 }
 
 @media (max-width: 920px) {
+  .utility-bar {
+    display: none;
+  }
+
+  .main-nav {
+    min-height: 70px;
+  }
+
   nav {
     display: none;
   }
 
   .hero {
     min-height: auto;
-    padding-top: 116px;
+    padding-top: 112px;
   }
 
   .hero-content {
@@ -529,17 +555,26 @@ footer a {
 }
 
 @media (max-width: 560px) {
-  .site-header {
+  .main-nav {
     min-height: 66px;
   }
 
-  .brand-mark {
-    width: 38px;
-    height: 38px;
+  .brand {
+    gap: 8px;
   }
 
   .brand small {
     display: none;
+  }
+
+  .brand strong {
+    display: none;
+  }
+
+  .quote-button {
+    width: 44px;
+    padding: 0;
+    font-size: 0;
   }
 
   .hero {

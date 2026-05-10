@@ -19,22 +19,30 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="GENEWIZ account manager home">
-        <span class="brand-mark">G</span>
-        <span>
-          <strong>GENEWIZ</strong>
-          <small>Account Manager</small>
-        </span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#solutions">Solutions</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="icon-button" href="#contact" aria-label="Start a project">
-        <i data-lucide="send"></i>
-      </a>
+      <div class="utility-bar">
+        <a href="mailto:sengchong.teo@azenta.com">Contact</a>
+        <a href="https://www.genewiz.com/" target="_blank" rel="noreferrer">GENEWIZ.com</a>
+        <a href="#contact">Request support</a>
+      </div>
+      <div class="main-nav">
+        <a class="brand" href="#top" aria-label="GENEWIZ account manager home">
+          <span class="brand-word">GENEWIZ</span>
+          <span>
+            <strong>from Azenta Life Sciences</strong>
+            <small>Seng Chong Teo | Account Manager</small>
+          </span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#solutions">Services</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="quote-button" href="#contact">
+          <i data-lucide="file-plus-2"></i>
+          Request quote
+        </a>
+      </div>
     </header>
 
     <main id="top">
@@ -43,19 +51,19 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <p class="eyebrow">GENEWIZ from Azenta Life Sciences</p>
-          <h1 id="hero-title">Move genomics projects from question to quote faster.</h1>
+          <h1 id="hero-title">Reliable genomics support, routed through your local account manager.</h1>
           <p>
-            Practical account support for research teams planning Sanger sequencing, NGS,
-            gene synthesis, oligos, plasmid preparation, and regulated-service workflows.
+            Practical support for research teams planning NGS, gene synthesis, oligos,
+            plasmid preparation, molecular genetics, and regulated-service workflows.
           </p>
           <div class="hero-actions">
             <a class="primary-action" href="#contact">
-              <i data-lucide="calendar-plus"></i>
-              Request consultation
+              <i data-lucide="mail"></i>
+              Email Seng Chong
             </a>
             <a class="secondary-action" href="#solutions">
               <i data-lucide="layers-3"></i>
-              View services
+              Explore services
             </a>
           </div>
         </div>
@@ -90,14 +98,9 @@
       <section id="solutions" class="solutions" aria-labelledby="solutions-title">
         <div class="section-heading">
           <p class="section-kicker">Service Lanes</p>
-          <h2 id="solutions-title">Match the experiment to the right path.</h2>
+          <h2 id="solutions-title">GENEWIZ services I can help route.</h2>
         </div>
         <div class="solution-grid">
-          <article>
-            <i data-lucide="dna"></i>
-            <h3>Sanger Sequencing</h3>
-            <p>Routine read confirmation, plasmid checks, PCR products, and plate-based submissions.</p>
-          </article>
           <article>
             <i data-lucide="network"></i>
             <h3>Next Generation Sequencing</h3>
@@ -117,6 +120,11 @@
             <i data-lucide="flask-conical"></i>
             <h3>Plasmid DNA Preparation</h3>
             <p>Prep scale selection, QC expectations, turnaround planning, and downstream fit.</p>
+          </article>
+          <article>
+            <i data-lucide="microscope"></i>
+            <h3>Molecular Genetics</h3>
+            <p>Project routing for identity testing, variant analysis, nucleic acid extraction, and related workflows.</p>
           </article>
           <article>
             <i data-lucide="shield-check"></i>
@@ -174,9 +182,9 @@
             <i data-lucide="file-symlink"></i>
             Gene synthesis brief
           </button>
-          <button class="resource-item" type="button" data-template="sanger">
-            <i data-lucide="table-properties"></i>
-            Sanger submission notes
+          <button class="resource-item" type="button" data-template="plasmid">
+            <i data-lucide="flask-conical"></i>
+            Plasmid prep notes
           </button>
         </div>
         <div class="template-output" aria-live="polite">
@@ -190,21 +198,21 @@
           <p class="section-kicker">Start Here</p>
           <h2 id="contact-title">Tell me what you are trying to accomplish.</h2>
           <p>
-            Replace the placeholder contact details with your direct email, phone, calendar link,
-            and territory information before publishing.
+            Send me the project goal, sample type, quantity, and timeline. I will help
+            route the request to the right GENEWIZ team.
           </p>
           <div class="contact-methods">
-            <a href="mailto:your.email@azenta.com">
+            <a href="mailto:sengchong.teo@azenta.com">
               <i data-lucide="mail"></i>
-              your.email@azenta.com
+              sengchong.teo@azenta.com
             </a>
-            <a href="tel:+10000000000">
+            <a href="tel:+6581128827">
               <i data-lucide="phone"></i>
-              +1 000 000 0000
+              +65-81128827
             </a>
             <a href="https://www.genewiz.com/" target="_blank" rel="noreferrer">
               <i data-lucide="external-link"></i>
-              genewiz.com
+              www.genewiz.com
             </a>
           </div>
         </div>
@@ -220,11 +228,11 @@
           <label>
             Project type
             <select name="project">
-              <option>Sanger sequencing</option>
               <option>Next generation sequencing</option>
               <option>Gene synthesis</option>
               <option>Oligo synthesis</option>
               <option>Plasmid DNA preparation</option>
+              <option>Molecular genetics</option>
               <option>GLP or clinical services</option>
             </select>
           </label>
@@ -242,7 +250,7 @@
     </main>
 
     <footer>
-      <p>GENEWIZ account support site. Update branding and contact details before public launch.</p>
+      <p>GENEWIZ account support site for Seng Chong Teo.</p>
       <a href="#top">Back to top</a>
     </footer>
   </body>
