@@ -6,12 +6,12 @@
   --panel: #ffffff;
   --soft: #f4fff9;
   --mist: #dff8ed;
-  --teal: #87e1b9;
+  --teal: #009e75;
   --teal-dark: #006644;
   --logo-blue: #0067b1;
-  --green: #87e1b9;
+  --green: #009e75;
   --violet: #826ec3;
-  --orange: #87e1b9;
+  --orange: #009e75;
   --charcoal: #4c5053;
   --shadow: 0 18px 44px rgba(0, 102, 68, 0.14);
   font-family:
@@ -53,8 +53,8 @@ a {
   gap: 26px;
   min-height: 34px;
   padding: 8px clamp(18px, 4vw, 56px);
-  background: #87e1b9;
-  color: #415d55;
+  background: #009e75;
+  color: var(--ink);
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -154,7 +154,7 @@ nav a {
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(0, 102, 68, 0.94), rgba(0, 102, 68, 0.62) 46%, rgba(135, 225, 185, 0.22)),
+    linear-gradient(90deg, rgba(0, 102, 68, 0.94), rgba(0, 102, 68, 0.62) 46%, rgba(0, 158, 117, 0.28)),
     linear-gradient(0deg, rgba(34, 43, 41, 0.46), transparent 46%);
 }
 
@@ -241,7 +241,7 @@ p {
 
 .primary-action {
   background: var(--orange);
-  color: var(--teal-dark);
+  color: var(--ink);
 }
 
 .secondary-action {
@@ -311,7 +311,7 @@ section:not(.hero) {
   height: 48px;
   place-items: center;
   border-radius: 8px;
-  background: #87e1b9;
+  background: #009e75;
   color: var(--teal-dark);
 }
 
@@ -381,8 +381,8 @@ section:not(.hero) {
 
 .ngs-option {
   overflow: clip;
-  background: rgba(135, 225, 185, 0.18);
-  border: 1px solid #87e1b9;
+  background: rgba(0, 158, 117, 0.18);
+  border: 1px solid #009e75;
   border-radius: 8px;
 }
 
@@ -442,8 +442,8 @@ section:not(.hero) {
 
 .category-grid article {
   padding: 18px;
-  background: rgba(135, 225, 185, 0.18);
-  border: 1px solid #87e1b9;
+  background: rgba(0, 158, 117, 0.18);
+  border: 1px solid #009e75;
   border-radius: 8px;
 }
 
@@ -480,7 +480,7 @@ section:not(.hero) {
   min-height: 34px;
   padding: 7px 10px;
   border-radius: 8px;
-  background: #87e1b9;
+  background: #009e75;
   color: var(--teal-dark);
   font-size: 0.9rem;
   font-weight: 800;
@@ -516,7 +516,7 @@ section:not(.hero) {
   display: grid;
   gap: 16px;
   padding: 26px;
-  background: rgba(135, 225, 185, 0.16);
+  background: rgba(0, 158, 117, 0.16);
   border: 1px solid var(--line);
   border-radius: 8px;
 }
